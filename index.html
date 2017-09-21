@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>COMP301 Group Project(Search)</title>
+    <meta content="Group Project, COMP301" name="keywords" />
+    <meta content="Group Project, COMP301" name="description" />
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div id="allPage">
+        <header>
+            <img alt="Centennial logo" height="209" src="images/CC50thAnniversary.jpg" width="200" />
+            <h1>COMP301 Group Project - Restaurants in Toronto (Search)</h1>
+        </header>
+
+        <form action="result.php" method="post">
+            <table style="width: 100%">
+                <tr>
+                    <td class="fieldLabel">Restaurant Name: </td>
+                    <td>
+                        <select class="multipleChoice" name="RestaurantName">
+                            <option value="">----------Select----------</option>
+                            <option value="ALO Restaurant">ALO Restaurant</option>
+                            <option value="GEORGE Restaurant">GEORGE Restaurant</option>
+                            <option value="Sunset Grill">Sunset Grill</option>
+                            <option value="Richmond Station">Richmond Station</option>
+                            <option value="Wilbur Restaurant">Wilbur Restaurant</option>
+                            <option value="Lee Restaurant">Lee Restaurant</option>
+                            <option value="Jacobs Restaurant">Jacobs Restaurant</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td class="fieldLabel">Cuisine: </td>
+                    <td>
+                        <select class="multipleChoice" name="Cuisine">
+                            <option value="">----------Select----------</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="Asian">Asian</option>
+                            <option value="Latin">Latin</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td class="fieldLabel">Meal: </td>
+                    <td>
+                <input name="Meal" type="radio" value="Breakfast" />Breakfast
+				<input name="Meal" type="radio" value="Lunch" />Lunch
+				<input name="Meal" type="radio" value="Dinner" />Dinner</td>
+                </tr>
+                <tr>
+                    <td class="fieldLabel">Price: </td>
+                    <td>
+                <input name="Price" type="radio" value="Cheap Eats" />Cheap Eats
+				<input name="Price" type="radio" value="Mid Range" />Mid Range
+				<input name="Price" type="radio" value="Fine Dining" />Fine Dining</td>
+                </tr>
+                <tr>
+                    <td class="fieldLabel">Neighbourhood: </td>
+                    <td>
+                        <select class="multipleChoice" name="Neighbourhood">
+                            <option value="">----------Select----------</option>
+                            <option value="Scarborough">Scarborough</option>
+                            <option value="Richmond Hill">Richmond Hill</option>
+                            <option value="North York">North York</option>
+                        </select></td>
+                </tr>
+                <tr>
+                     <td class="fieldLabel">Online Booking: </td>
+                    <td>
+                <input name="OnlineBooking" type="radio" value="Yes" />Yes
+				<input name="OnlineBooking" type="radio" value="No" />No</td>
+                </tr>
+                <tr>
+                    <td class="fieldLabel">
+                        </td>
+                    <td>
+                        <input name="btnSubmit"  type="submit" value="Search" />
+                        <input name="btnReset"  type="reset" value="Reset" />
+			<input type="button" onclick="window.open('insert.html');" value="Insert" />
+		    </td>
+                </tr>
+            </table>
+        </form>
+        
+    </div>
+
+</body>
+
+</html>
